@@ -49,6 +49,9 @@ for (int j = 0; j < data[i].length; j++) {
                    System.out.println("Angka " + cari + " ditemukan pada indeks [" + i + "][" + j + "]");
                    data[i][j]=ganti;
                    ketemu=true;
+                   if (!ketemu) {
+            System.out.println("Nilai " + cari + " tidak ditemukan dalam array.");
+        }
                }
                }
             }
@@ -56,6 +59,7 @@ for (int j = 0; j < data[i].length; j++) {
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
                 System.out.println(data[i][j] + " ");
+                
             }
             System.out.println();
             }
